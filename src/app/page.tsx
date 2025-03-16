@@ -55,7 +55,7 @@ export default function Home() {
     <div className="flex flex-col items-center md:items-start w-full md:w-1/2 text-center md:text-left space-y-4 px-4">
       <Header />
       <p className="text-lg font-bold text-white leading-relaxed">
-        I love exploring computer science concepts, especially their theoretical foundations. I also build cool automation scripts with Bash and Python, and I&apos;m currently diving into trying out competitive programming. 
+        I love exploring computer science concepts, especially their theoretical stuff. I also build cool automation scripts with Bash and Python, and I&apos;m currently trying out competitive programming.
       </p>
     </div>
   </div>
