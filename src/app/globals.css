@@ -86,3 +86,17 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Hide scrollbar but allow scrolling */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none; /* Firefox */
+}
+
+body {
+  -ms-overflow-style: none; /* IE, Edge */
+}
+
