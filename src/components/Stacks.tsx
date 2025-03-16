@@ -18,7 +18,6 @@ import {
   SiDocker,
   SiPrisma,
   SiPostgresql,
-  SiFirebase,
   SiVercel,
   SiCloudflare,
   SiMysql,
@@ -62,6 +61,7 @@ export function Stacks() {
     { Icon: SiVercel, name: "Vercel", color: "text-gray-500" },
     { Icon: SiCloudflare, name: "Cloudflare", color: "text-orange-500" },
     { Icon: SiRedis, name: "Redis", color: "text-red-500" },
+    { Icon: FaDocker, name: "Docker", color: "text-blue-500" },
   ];
 
   return (

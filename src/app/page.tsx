@@ -1,13 +1,12 @@
 "use client";
 import { Suspense } from "react";
-// import Image from "next/image";
+import Image from "next/image";
 import { Header } from "@/components/Header";
 import { Buttons } from "@/components/Buttons";
 import { Back } from "@/components/Back";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { Navbar } from "@/components/Navbar";
 import { Stacks } from "@/components/Stacks";
-import { BlogGrid } from "@/components/BlogGrid";
 import dynamic from "next/dynamic";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -43,14 +42,20 @@ export default function Home() {
   <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-6xl gap-12">
     {/* Image Section */}
     <div className="flex justify-center w-full md:w-1/2">
-      <img src="/lucy4.jpeg" alt="Profile" className="w-3/4 md:w-full rounded-lg shadow-lg" />
+      <Image 
+        src="/lucy4.jpeg"
+        alt="Profile"
+        width={500}
+        height={300}
+        className="w-3/4 md:w-full rounded-lg shadow-lg"
+      />
     </div>
 
     {/* Text Section */}
     <div className="flex flex-col items-center md:items-start w-full md:w-1/2 text-center md:text-left space-y-4 px-4">
       <Header />
       <p className="text-lg font-bold text-white leading-relaxed">
-        I love exploring computer science concepts, especially their theoretical foundations. I also build cool automation scripts with Bash and Python, and I’m currently diving into trying out competitive programming. 
+        I love exploring computer science concepts, especially their theoretical foundations. I also build cool automation scripts with Bash and Python, and I&apos;m currently diving into trying out competitive programming. 
       </p>
     </div>
   </div>

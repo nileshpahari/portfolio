@@ -1,7 +1,7 @@
 "use client";
-import { Back } from "@/components/Back";
-import { Navbar } from "@/components/Navbar";
-import { Projec } from "@/components/Projec";
+// import { Back } from "@/components/Back";
+// import { Navbar } from "@/components/Navbar";
+// import { Projec } from "@/components/Projec";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import { useState, useEffect } from "react";
 

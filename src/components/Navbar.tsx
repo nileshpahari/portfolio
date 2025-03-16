@@ -4,8 +4,6 @@ import Link from "next/link";
 import {
   SiLeetcode,
   SiGithub,
-  SiLinkedin,
-  SiInstagram,
   SiCodeforces,
 } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
