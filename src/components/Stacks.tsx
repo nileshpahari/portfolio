@@ -4,9 +4,6 @@ import {
   FaNodeJs,
   FaGithub,
   FaPython,
-  FaDocker,
-
-  // FaPubsub,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
@@ -61,7 +58,6 @@ export function Stacks() {
     { Icon: SiVercel, name: "Vercel", color: "text-gray-500" },
     { Icon: SiCloudflare, name: "Cloudflare", color: "text-orange-500" },
     { Icon: SiRedis, name: "Redis", color: "text-red-500" },
-    { Icon: FaDocker, name: "Docker", color: "text-blue-500" },
   ];
 
   return (
