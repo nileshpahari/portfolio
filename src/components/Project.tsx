@@ -56,7 +56,7 @@ export function Project() {
       title: "Contest Pulse",
       description:
         "You enter your username and the Twitter API fetch your profile and pass it on to Gemini API which has prompt to comment on the user's Posts, PFP, username",
-      image: "/valentino.jpg",
+      image: "/contestpulse.jpg",
       liveLink: "https://contestpulse.netlify.app/",
       github: "https://github.com/nileshpahari/contest-pulse",
       tags: ["Next.js", "Tailwind", "TypeScript", "ShadCN"],
@@ -66,7 +66,7 @@ export function Project() {
       title: "Top Chess",
       description:
         "A Real-time Chat React App with Cloudinary Image Upload and Authentication and Socket.io for real-time chat, and More AI feature soon to be added",
-      image: "/kagura.jpg",
+      image: "/topchess.jpg",
       // liveLink: "https://topchess.netlify.app/",
       github: "https://github.com/nileshpahari/topchess",
       tags: ["React", "Socket.io", "TypeScript"],
@@ -76,7 +76,7 @@ export function Project() {
       title: "React Blog",
       description:
         "Simple blogging application (similar to medium, but doesnt have all the features) where user create, read, update and delete articles",
-      image: "/rangers.jpg",
+      image: "/reactblog.jpg",
       liveLink: "https://react-blog.netlify.app/",
       github: "https://github.com/nileshpahari/react-blog",
       tags: ["React", "TinyMCE", "Appwrite"],
