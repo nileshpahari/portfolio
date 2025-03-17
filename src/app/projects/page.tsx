@@ -1,7 +1,7 @@
 "use client";
-// import { Back } from "@/components/Back";
-// import { Navbar } from "@/components/Navbar";
-// import { Projec } from "@/components/Projec";
+import { Back } from "@/components/Back";
+import { Navbar } from "@/components/Navbar";
+import { Project } from "@/components/Project";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import { useState, useEffect } from "react";
 
@@ -13,14 +13,15 @@ export default function Projects() {
   }, []);
 
   if (isLoading) return <LoadingSpinner />;
-
+  alert("Not all the live links may work as expected. This is because some are under construction, and some of the projects are hosted on free-tier services, which may have restrictions on the number of requests they can handle. If you encounter any issues, please try again later.");
   return (
     <div className="min-h-screen w-screen bg-black relative overflow-hidden">
-      <div className="flex h-screen items-center justify-center">
+      {/* Under construction message */}
+      {/* <div className="flex h-screen items-center justify-center">
         <div className="text-white text-4xl font-bold">Page is under construction</div>
-      </div>
+      </div> */}
       {/* Simple light beam */}
-      {/* <div className="absolute top-0 inset-x-0 h-[40vh] bg-gradient-to-b from-orange-500/10 via-orange-400/5 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-[40vh] bg-gradient-to-b from-orange-500/10 via-orange-400/5 to-transparent" />
       
       <Navbar />
       <Back />
@@ -36,8 +37,8 @@ export default function Projects() {
             <div className="absolute -bottom-[16px] left-1/3 right-1/3 h-[12px] bg-gradient-to-r from-transparent via-orange-600/20 to-transparent blur-2xl" />
           </h2>
         </div>
-        <Projec />
-      </section> */}
+        <Project />
+      </section>
     </div>
   );
 } 
