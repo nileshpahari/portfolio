@@ -65,7 +65,7 @@ export function Project() {
     {
       title: "Top Chess",
       description:
-        "A Real-time Chat React App with Cloudinary Image Upload and Authentication and Socket.io for real-time chat, and More AI feature soon to be added",
+        "A multiplayer chess platform where users can play chess with others realtime. (similar to chess.com or lichess.org, but with lesser features)",
       image: "/topchess.jpg",
       // liveLink: "https://topchess.netlify.app/",
       github: "https://github.com/nileshpahari/topchess",
@@ -85,7 +85,7 @@ export function Project() {
     {
       title: "Carbon Sense",
       description:
-        "A 24 hour hackathon project that calculates your carbon footprint and suggests ways to reduce it.",
+        "A 24 hour hackathon project that calculates your annual carbon footprint emmision and gives AI based suggestions to reduce it.",
       image: "/carbon.jpg",
       liveLink: "https://innovocon2k25.vercel.app/",
       github: "https://github.com/nileshpahari/innovocon2025",
