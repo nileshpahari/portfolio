@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import { usePerformanceMode } from "@/hooks/usePerformanceMode";
 
-type ProjectColor = "red" | "pink" | "orange" | "green" | "blue";
+type ProjectColor = "red" | "pink" | "orange" | "green" | "blue" | "yellow" | "gray";
 
 interface ProjectProps {
   title: string;
@@ -46,6 +46,18 @@ const projectStyles = {
     glow: "shadow-[0_0_15px_rgba(29,78,216,0.7)]",
     hover: "bg-blue-500/50",
   },
+  yellow: {
+    border: "border-yellow-500",
+    tag: "bg-yellow-500/20 border-yellow-500/30",
+    glow: "shadow-[0_0_15px_rgba(249,168,37,0.7)]",
+    hover: "bg-yellow-500/50",
+  },
+  gray: {
+    border: "border-gray-500",
+    tag: "bg-gray-500/20 border-gray-500/30",
+    glow: "shadow-[0_0_15px_rgba(156,163,175,0.7)]",
+    hover: "bg-gray-500/50",
+  },
 };
 
 export function Project() {
@@ -56,7 +68,7 @@ export function Project() {
       title: "Contest Pulse",
       description:
         "A web app that where users can see upcoming coding contests from various platforms like Codeforces, Leetcode, CodeChef, etc. and bookmark them for later. They can also enable notifications for the contests they are interested in." ,
-      image: "/contestpulse.jpg",
+      image: "/contestpulse.jpeg",
       liveLink: "https://contestpulse.netlify.app/",
       github: "https://github.com/nileshpahari/contest-pulse",
       tags: ["Next.js", "TypeScript", "ShadCN"],
@@ -66,27 +78,27 @@ export function Project() {
       title: "Top Chess",
       description:
         "A multiplayer chess platform where users can play chess with others realtime. (similar to chess.com or lichess.org, but with lesser features)",
-      image: "/topchess.jpg",
+      image: "/topchess.jpeg",
       // liveLink: "https://topchess.netlify.app/",
       github: "https://github.com/nileshpahari/topchess",
       tags: ["React", "WebSockets", "TypeScript", ],
-      tagColor: "orange" as ProjectColor,
+      tagColor: "gray" as ProjectColor,
     },
     {
       title: "React Blog",
       description:
         "Simple blogging application (similar to medium, but doesnt have all the features) where user create, read, update and delete articles",
-      image: "/reactblog.jpg",
+      image: "/reactblog.webp",
       liveLink: "https://react-blog.netlify.app/",
       github: "https://github.com/nileshpahari/react-blog",
       tags: ["React", "TinyMCE", "Appwrite"],
-      tagColor: "blue" as ProjectColor,
+      tagColor: "orange" as ProjectColor,
     },
     {
       title: "Carbon Sense",
       description:
         "A 24 hour hackathon project that calculates your annual carbon footprint emmision and gives AI based suggestions to reduce it.",
-      image: "/carbon.jpg",
+      image: "/carbonsense.avif",
       liveLink: "https://innovocon2k25.vercel.app/",
       github: "https://github.com/nileshpahari/innovocon2025",
       tags: ["Next.js", "OpenAI API"],
@@ -96,11 +108,11 @@ export function Project() {
       title: "Media Sphere",
       description:
         "Backend of a media sharing platform (similar to YouTube)", 
-      image: "",
+      image: "/mediasphere.jpeg",
       liveLink: "",
       github: "",
       tags: ["Node.js", "Express", "MongoDB", "TypeScript"],
-      tagColor: "pink" as ProjectColor,
+      tagColor: "red" as ProjectColor,
 
     }
   ];
