@@ -95,16 +95,6 @@ export function Project() {
       tagColor: "orange" as ProjectColor,
     },
     {
-      title: "Carbon Sense",
-      description:
-        "A 24 hour hackathon project that calculates your annual carbon footprint emmision and gives AI based suggestions to reduce it.",
-      image: "/carbonsense.avif",
-      liveLink: "https://innovocon2k25.vercel.app/",
-      github: "https://github.com/nileshpahari/innovocon2025",
-      tags: ["Next.js", "OpenAI API"],
-      tagColor: "green" as ProjectColor,
-    },
-    {
       title: "Media Sphere",
       description:
         "Backend of a media sharing platform (similar to YouTube)", 
@@ -114,7 +104,17 @@ export function Project() {
       tags: ["Node.js", "Express", "MongoDB", "TypeScript"],
       tagColor: "red" as ProjectColor,
 
-    }
+    },
+    {
+      title: "Carbon Sense",
+      description:
+        "A 24 hour hackathon project that calculates your annual carbon footprint emmision and gives AI based suggestions to reduce it.",
+      image: "/carbonsense.avif",
+      liveLink: "https://innovocon2k25.vercel.app/",
+      github: "https://github.com/nileshpahari/innovocon2025",
+      tags: ["Next.js", "OpenAI API"],
+      tagColor: "green" as ProjectColor,
+    },
   ];
 
   return (
