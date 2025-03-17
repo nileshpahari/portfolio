@@ -55,7 +55,7 @@ export function Project() {
     {
       title: "Contest Pulse",
       description:
-        "You enter your username and the Twitter API fetch your profile and pass it on to Gemini API which has prompt to comment on the user's Posts, PFP, username",
+        "A web app that where users can see upcoming coding contests from various platforms like Codeforces, Leetcode, CodeChef, etc. and bookmark them for later. They can also enable notifications for the contests they are interested in." ,
       image: "/contestpulse.jpg",
       liveLink: "https://contestpulse.netlify.app/",
       github: "https://github.com/nileshpahari/contest-pulse",
