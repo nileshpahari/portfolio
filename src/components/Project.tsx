@@ -69,7 +69,7 @@ export function Project() {
       image: "/topchess.jpg",
       // liveLink: "https://topchess.netlify.app/",
       github: "https://github.com/nileshpahari/topchess",
-      tags: ["React", "Socket.io", "TypeScript"],
+      tags: ["React", "WebSockets", "TypeScript", "Tailwind"],
       tagColor: "orange" as ProjectColor,
     },
     {
