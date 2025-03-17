@@ -59,7 +59,7 @@ export function Project() {
       image: "/contestpulse.jpg",
       liveLink: "https://contestpulse.netlify.app/",
       github: "https://github.com/nileshpahari/contest-pulse",
-      tags: ["Next.js", "Tailwind", "TypeScript", "ShadCN"],
+      tags: ["Next.js", "TypeScript", "ShadCN"],
       tagColor: "red" as ProjectColor,
     },
     {
@@ -69,7 +69,7 @@ export function Project() {
       image: "/topchess.jpg",
       // liveLink: "https://topchess.netlify.app/",
       github: "https://github.com/nileshpahari/topchess",
-      tags: ["React", "WebSockets", "TypeScript", "Tailwind"],
+      tags: ["React", "WebSockets", "TypeScript", ],
       tagColor: "orange" as ProjectColor,
     },
     {
@@ -89,9 +89,20 @@ export function Project() {
       image: "/carbon.jpg",
       liveLink: "https://innovocon2k25.vercel.app/",
       github: "https://github.com/nileshpahari/innovocon2025",
-      tags: ["Next.js", "Tailwind", "TypeScript"],
+      tags: ["Next.js", "OpenAI API"],
       tagColor: "green" as ProjectColor,
     },
+    {
+      title: "Media Sphere",
+      description:
+        "Backend of a media sharing platform (similar to YouTube)", 
+      image: "",
+      liveLink: "",
+      github: "",
+      tags: ["Node.js", "Express", "MongoDB", "TypeScript"],
+      tagColor: "pink" as ProjectColor,
+
+    }
   ];
 
   return (
