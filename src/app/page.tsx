@@ -8,7 +8,6 @@ import { AuroraBackground } from "@/components/ui/aurora-background";
 import { Navbar } from "@/components/Navbar";
 import { Stacks } from "@/components/Stacks";
 import dynamic from "next/dynamic";
-// import { Analytics } from "@vercel/analytics/react";
 
 const LoadingSpinner = dynamic(() => import("@/components/LoadingSpinner"), {
   ssr: false,
@@ -38,36 +37,36 @@ export default function Home() {
             <Buttons />
           </div>
         </header> */}
-      <header className="flex flex-col items-center justify-center min-h-screen mt-8 px-6">
-  <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-6xl gap-12">
-    {/* Image Section */}
-    <div className="flex justify-center w-full md:w-1/2">
-      <Image 
-        src="/lucy.jpeg"
-        alt="Profile"
-        width={500}
-        height={300}
-        className="w-3/4 md:w-full rounded-lg shadow-lg"
-      />
-    </div>
+        <header className="flex flex-col items-center justify-center min-h-screen mt-8 px-6">
+          <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-6xl gap-12">
+            {/* Image Section */}
+            <div className="flex justify-center w-full md:w-1/2">
+              <Image
+                src="/lucy.jpeg"
+                alt="Profile"
+                width={500}
+                height={300}
+                className="w-3/4 md:w-full rounded-lg shadow-lg"
+              />
+            </div>
 
-    {/* Text Section */}
-    <div className="flex flex-col items-center md:items-start w-full md:w-1/2 text-center md:text-left space-y-4 px-4">
-      <Header />
-      <p className="text-lg font-bold text-white leading-relaxed">
-        I love exploring computer science concepts, especially their theoretical aspects. I also build cool automation scripts with Bash and Python, and I&apos;m currently trying out competitive programming.
-      </p>
-    </div>
-  </div>
+            {/* Text Section */}
+            <div className="flex flex-col items-center md:items-start w-full md:w-1/2 text-center md:text-left space-y-4 px-4">
+              <Header />
+              <p className="text-lg font-bold text-white leading-relaxed">
+                I love exploring computer science concepts, especially their
+                theoretical aspects. I also build cool automation scripts with
+                Bash and Python, and I&apos;m currently trying out competitive
+                programming.
+              </p>
+            </div>
+          </div>
 
-  {/* Buttons */}
-  <div className="mt-24">
-    <Buttons />
-  </div>
-</header>
-
-
-
+          {/* Buttons */}
+          <div className="mt-24">
+            <Buttons />
+          </div>
+        </header>
       </Suspense>
 
       {/* Stacks Section */}
@@ -85,8 +84,6 @@ export default function Home() {
         </div>
         <Stacks />
       </section>
-
-      {/* <Analytics /> */}
     </AuroraBackground>
   );
 }
