@@ -8,7 +8,7 @@ import { AuroraBackground } from "@/components/ui/aurora-background";
 import { Navbar } from "@/components/Navbar";
 import { Stacks } from "@/components/Stacks";
 import dynamic from "next/dynamic";
-import { Analytics } from "@vercel/analytics/react";
+// import { Analytics } from "@vercel/analytics/react";
 
 const LoadingSpinner = dynamic(() => import("@/components/LoadingSpinner"), {
   ssr: false,
@@ -55,7 +55,7 @@ export default function Home() {
     <div className="flex flex-col items-center md:items-start w-full md:w-1/2 text-center md:text-left space-y-4 px-4">
       <Header />
       <p className="text-lg font-bold text-white leading-relaxed">
-        I love exploring computer science concepts, especially their theoretical stuff. I also build cool automation scripts with Bash and Python, and I&apos;m currently trying out competitive programming.
+        I love exploring computer science concepts, especially their theoretical aspects. I also build cool automation scripts with Bash and Python, and I&apos;m currently trying out competitive programming.
       </p>
     </div>
   </div>
@@ -86,7 +86,7 @@ export default function Home() {
         <Stacks />
       </section>
 
-      <Analytics />
+      {/* <Analytics /> */}
     </AuroraBackground>
   );
 }

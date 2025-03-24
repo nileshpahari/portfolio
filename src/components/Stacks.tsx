@@ -1,10 +1,4 @@
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaNodeJs,
-  FaGithub,
-  FaPython,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaNodeJs, FaPython } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { DiMongodb } from "react-icons/di";
@@ -15,11 +9,9 @@ import {
   SiDocker,
   SiPrisma,
   SiPostgresql,
-  SiVercel,
   SiCloudflare,
   SiMysql,
   SiSocketdotio,
-  SiJsonwebtokens,
   SiRedux,
   SiPostman,
   SiLinux,
@@ -27,11 +19,12 @@ import {
   SiCplusplus,
   SiGnubash,
   SiRedis,
+  SiGit,
 } from "react-icons/si";
 
 export function Stacks() {
   const icons = [
-    { Icon: FaGithub, name: "GitHub", color: "text-gray-400" },
+    { Icon: SiGit, name: "Git", color: "text-gray-400" },
     { Icon: SiTypescript, name: "TypeScript", color: "text-blue-500" },
     { Icon: IoLogoJavascript, name: "JavaScript", color: "text-yellow-400" },
     { Icon: RiReactjsLine, name: "React.js", color: "text-cyan-400" },
@@ -43,7 +36,6 @@ export function Stacks() {
     { Icon: SiPostgresql, name: "PostgreSQL", color: "text-blue-700" },
     { Icon: SiMysql, name: "MySQL", color: "text-blue-600" },
     { Icon: SiSocketdotio, name: "WebSockets", color: "text-gray-400" },
-    { Icon: SiJsonwebtokens, name: "JWT", color: "text-orange-500" },
     { Icon: SiRedux, name: "Redux", color: "text-purple-500" },
     { Icon: SiPostman, name: "REST APIs", color: "text-orange-500" },
     { Icon: SiLinux, name: "Linux", color: "text-gray-400" },
@@ -55,7 +47,6 @@ export function Stacks() {
     { Icon: FaHtml5, name: "HTML", color: "text-orange-500" },
     { Icon: RiTailwindCssFill, name: "Tailwind CSS", color: "text-teal-400" },
     { Icon: SiDocker, name: "Docker", color: "text-blue-500" },
-    { Icon: SiVercel, name: "Vercel", color: "text-gray-500" },
     { Icon: SiCloudflare, name: "Cloudflare", color: "text-orange-500" },
     { Icon: SiRedis, name: "Redis", color: "text-red-500" },
   ];

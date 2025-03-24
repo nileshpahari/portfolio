@@ -77,7 +77,7 @@ export function Project() {
     {
       title: "Top Chess",
       description:
-        "A multiplayer chess platform where users can play chess with others realtime. (similar to chess.com or lichess.org, but with lesser features)",
+        "A multiplayer chess platform where users can play chess with others realtime. (similar to chess.com or lichess.org, but has lesser features)",
       image: "/topchess.jpeg",
       // liveLink: "https://topchess.netlify.app/",
       github: "https://github.com/nileshpahari/topchess",
