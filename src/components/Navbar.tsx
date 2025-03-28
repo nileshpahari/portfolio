@@ -8,7 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 export function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-sm border-b border-transparent">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6">
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="relative group">
             <h1 className="text-white text-2xl font-bold bg-clip-text bg-gradient-to-b from-white to-gray-300 text-transparent hover:text-orange-500 transition-all duration-300 hover:scale-110">

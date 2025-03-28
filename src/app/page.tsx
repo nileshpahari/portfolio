@@ -19,28 +19,10 @@ export default function Home() {
       <Navbar />
       <Suspense fallback={<LoadingSpinner />}>
         <Back />
-        {/* <header className="flex flex-col items-center justify-center min-h-screen mt-8">
-          <div className="flex flex-row gap-4">
-            <div className="w-1/2 h-1/2  rounded-md">
-              <img src="/lucy4.jpeg" alt="" className=" rounded-md w-3/4 h-3/4" />
-            </div>
-            <div className="w-1/2 h-1/2  rounded-lg p-12">
-              <Header />
-              <p className="mt-0 px-11 max-w-3xl text-center text-lg font-bold text-white pt-1">
-                I like studying computer science concepts, especially the
-                theoretical aspects. I also build random cool scripts with Bash
-                and Python. Currently trying out competitive programming.
-              </p>
-            </div>
-          </div>
-          <div className="mt-24 pt-4">
-            <Buttons />
-          </div>
-        </header> */}
-        <header className="flex flex-col items-center justify-center min-h-screen mt-8 px-6">
+        <header className="flex flex-col items-center justify-center min-h-screen md:mt-8 mt-16  px-6">
           <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-6xl gap-12">
             {/* Image Section */}
-            <div className="flex justify-center w-full md:w-1/2">
+            <div className="md:w-1/2 hidden md:flex md:justify-center">
               <Image
                 src="/lucy.jpeg"
                 alt="Profile"
