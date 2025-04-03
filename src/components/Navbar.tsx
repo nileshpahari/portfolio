@@ -1,14 +1,14 @@
 "use client";
 import Link from "next/link";
 
-import { SiGithub, SiCodeforces } from "react-icons/si";
+import { SiGithub, SiCodeforces, SiLinkedin, SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-sm border-b border-transparent">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="relative group">
             <h1 className="text-white text-2xl font-bold bg-clip-text bg-gradient-to-b from-white to-gray-300 text-transparent hover:text-orange-500 transition-all duration-300 hover:scale-110">
@@ -37,9 +37,17 @@ export function Navbar() {
             <Link
               href="https://linkedin.com/in/nileshpahari"
               target="_blank"
-              className="text-white hover:text-orange-400 transition-all duration-300 hover:scale-110 relative group"
+              className="text-white hover:text-orange-500 transition-all duration-300 hover:scale-110 relative group"
             >
               <FaLinkedin className="w-6 h-6" />
+              <span className="absolute -inset-2 bg-orange-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </Link>
+            <Link
+              href="https://leetcode.com/u/nileshpahari/"
+              target="_blank"
+              className="text-white hover:text-orange-500 transition-all duration-300 hover:scale-110 relative group  "
+            >
+              <SiLeetcode className="w-6 h-6" />
               <span className="absolute -inset-2 bg-orange-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </Link>
             <Link
