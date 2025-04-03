@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 
-import { SiGithub, SiCodeforces, SiLinkedin, SiLeetcode } from "react-icons/si";
+import { SiGithub, SiCodeforces, SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
