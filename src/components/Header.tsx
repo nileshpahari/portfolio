@@ -2,7 +2,7 @@ import React, { memo } from "react";
 import { FlipWords } from "./ui/flip-words";
 
 export const Header = memo(function Header() {
-  const words = ["DSA", "CP", "Web 2.0", "Web 3.0"];
+  const words = ["DSA", "CP", "Web 2.0", "DevOps"];
 
   return (
     <div className="flex justify-center items-center pr- pl-0">
