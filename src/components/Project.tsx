@@ -3,14 +3,14 @@ import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import { usePerformanceMode } from "@/hooks/usePerformanceMode";
 
-type ProjectColor = "red" | "pink" | "orange" | "green" | "blue" | "yellow" | "gray";
+type ProjectColor ="red" | "pink" | "orange" | "green" | "blue" | "yellow" | "gray";
 
 interface ProjectProps {
   title: string;
   description: string;
   image: string;
   liveLink?: string;
-  github: string;
+  github?: string;
   tags: string[];
   tagColor: ProjectColor;
 }
@@ -67,11 +67,40 @@ export function Project() {
     {
       title: "Contest Pulse",
       description:
-        "A web app that where users can see upcoming coding contests from various platforms like Codeforces, Leetcode, CodeChef, etc. and bookmark them for later. They can also enable notifications for the contests they are interested in." ,
+        "A web app that where users can see upcoming coding contests from various platforms like Codeforces, Leetcode, CodeChef, etc. and bookmark them for later. They can also enable notifications for the contests they are interested in.",
       image: "/contestpulse.jpeg",
       liveLink: "https://contestpulse.netlify.app/",
       github: "https://github.com/nileshpahari/contest-pulse",
-      tags: ["Next.js", "TypeScript", "ShadCN"],
+      tags: ["Next.js", "TypeScript", "TailwindCSS", "NextAuth", "Prima"],
+      tagColor: "red" as ProjectColor,
+    },
+    {
+      title: "Chatty",
+      description:
+        "A realtime chatting application build using websockets where users can chat with each other and send text messages, images and more. (similar to WhatsApp)",
+      image: "/chatty.png",
+      tags: ["React.js", "TypeScript", "TailwindCSS", "Websocket", "Prisma"],
+      // github: "https://github.com/nileshpahari/chatty",
+      // liveLink: "https://chatty.netlify.app/",
+      tagColor: "blue",
+    },
+    {
+      title: "React Blog",
+      description:
+        "Simple blogging application (similar to medium, but doesnt have all the features) where user create, read, update and delete articles",
+      image: "/reactblog.webp",
+      liveLink: "https://react-blog.netlify.app/",
+      github: "https://github.com/nileshpahari/react-blog",
+      tags: ["React", "TailwindCSS", "TinyMCE", "Appwrite"],
+      tagColor: "orange" as ProjectColor,
+    },
+    {
+      title: "Media Sphere",
+      description: "Backend of a media sharing platform (similar to YouTube)",
+      image: "/mediasphere.jpeg",
+      liveLink: "",
+      github: "",
+      tags: ["Node.js", "Express", "MongoDB", "TypeScript"],
       tagColor: "red" as ProjectColor,
     },
     {
@@ -81,29 +110,8 @@ export function Project() {
       image: "/topchess.jpeg",
       // liveLink: "https://topchess.netlify.app/",
       github: "https://github.com/nileshpahari/topchess",
-      tags: ["React", "WebSockets", "TypeScript", ],
+      tags: ["React", "TailwindCSS", "WebSockets", "TypeScript", "Prisma"],
       tagColor: "gray" as ProjectColor,
-    },
-    {
-      title: "React Blog",
-      description:
-        "Simple blogging application (similar to medium, but doesnt have all the features) where user create, read, update and delete articles",
-      image: "/reactblog.webp",
-      liveLink: "https://react-blog.netlify.app/",
-      github: "https://github.com/nileshpahari/react-blog",
-      tags: ["React", "TinyMCE", "Appwrite"],
-      tagColor: "orange" as ProjectColor,
-    },
-    {
-      title: "Media Sphere",
-      description:
-        "Backend of a media sharing platform (similar to YouTube)", 
-      image: "/mediasphere.jpeg",
-      liveLink: "",
-      github: "",
-      tags: ["Node.js", "Express", "MongoDB", "TypeScript"],
-      tagColor: "red" as ProjectColor,
-
     },
     {
       title: "Carbon Sense",
@@ -112,7 +120,7 @@ export function Project() {
       image: "/carbonsense.avif",
       liveLink: "https://innovocon2k25.vercel.app/",
       github: "https://github.com/nileshpahari/innovocon2025",
-      tags: ["Next.js", "OpenAI API"],
+      tags: ["Next.js", "TailwindCSS", "OpenAI API"],
       tagColor: "green" as ProjectColor,
     },
   ];
@@ -124,7 +132,6 @@ export function Project() {
           key={index}
           className="relative group w-full md:w-[calc(50%-2rem)] lg:w-[calc(33.33%-2rem)]"
         >
-          {/* Project Card */}
           <div
             className={`relative h-full w-full bg-black/20 rounded-lg p-6
             ${
@@ -133,7 +140,6 @@ export function Project() {
                 : "group-hover:scale-[1.01] transition-transform duration-300"
             }`}
           >
-            {/* Hover effect - simplified for low performance */}
             <div
               className={`absolute -inset-[1.5px] rounded-lg opacity-0 group-hover:opacity-100 
               transition-opacity duration-300 ${
@@ -143,7 +149,6 @@ export function Project() {
               }`}
             />
 
-            {/* Content */}
             <div className="relative z-20">
               <Image
                 src={project.image}
@@ -159,7 +164,6 @@ export function Project() {
                 {project.description}
               </p>
 
-              {/* Links */}
               <div className="flex items-center gap-4 mb-4">
                 {project.liveLink && (
                   <a
@@ -183,7 +187,6 @@ export function Project() {
                 </a>
               </div>
 
-              {/* Tags */}
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag, tagIndex) => (
                   <span
@@ -199,7 +202,6 @@ export function Project() {
             </div>
           </div>
 
-          {/* Glow effect - simplified for low performance */}
           <div
             className={`absolute -inset-2 rounded-lg opacity-0 group-hover:opacity-100 
             transition-opacity duration-500 pointer-events-none ${
