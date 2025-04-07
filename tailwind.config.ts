@@ -69,6 +69,8 @@ export default {
       animation: {
         orbit: "orbit calc(var(--duration)*1s) linear infinite",
         aurora: "aurora 60s linear infinite",
+        floatY: "floatY 3.5s ease-in-out infinite", 
+
       },
       willChange: {
         'transform': 'transform',
@@ -93,6 +95,11 @@ export default {
           to: {
             backgroundPosition: "350% 50%, 350% 50%",
           },
+        },
+        floatY: { 
+           "0%": { transform: "translateY(0px)" },
+           "50%": { transform: "translateY(-25px)" },
+           "100%": { transform: "translateY(0px)" },
         },
       },
     },

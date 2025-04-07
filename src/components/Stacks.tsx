@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaNodeJs, FaPython } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaNodeJs, FaPython, FaAws } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { DiMongodb } from "react-icons/di";
@@ -20,6 +20,7 @@ import {
   SiGnubash,
   SiRedis,
   SiGit,
+  SiVercel,
 } from "react-icons/si";
 
 export function Stacks() {
@@ -49,6 +50,8 @@ export function Stacks() {
     { Icon: SiDocker, name: "Docker", color: "text-blue-500" },
     { Icon: SiCloudflare, name: "Cloudflare", color: "text-orange-500" },
     { Icon: SiRedis, name: "Redis", color: "text-red-500" },
+    { Icon: SiVercel, name: "Vercel", color: "text-white" },
+    { Icon: FaAws, name: "AWS", color: "text-red-500" }, 
   ];
 
   return (

@@ -20,6 +20,8 @@ export default function Home() {
       <Suspense fallback={<LoadingSpinner />}>
         <Back />
         <header className="flex flex-col items-center justify-center min-h-screen md:mt-8 mt-16  px-6">
+          {/* <header className="flex flex-col items-center justify-center min-h-screen md:mt-8 mt-16 px-6 animate-diagonal"> */}
+
           <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-6xl gap-12">
             {/* Image Section */}
             <div className="md:w-1/2 hidden md:flex md:justify-center">
@@ -28,7 +30,7 @@ export default function Home() {
                 alt="Profile"
                 width={500}
                 height={300}
-                className="w-3/4 md:w-full rounded-lg shadow-lg"
+                className="w-3/4 md:w-full rounded-lg shadow-lg animate-floatY"
               />
             </div>
 
