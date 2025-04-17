@@ -3,7 +3,14 @@ import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import { usePerformanceMode } from "@/hooks/usePerformanceMode";
 
-type ProjectColor = "red" | "pink" | "orange" | "green" | "blue" | "yellow" | "gray";
+type ProjectColor =
+  | "red"
+  | "pink"
+  | "orange"
+  | "green"
+  | "blue"
+  | "yellow"
+  | "gray";
 
 interface ProjectProps {
   title: string;
@@ -74,16 +81,7 @@ export function Project() {
       tags: ["Next.js", "TypeScript", "TailwindCSS", "NextAuth", "Prima"],
       tagColor: "red" as ProjectColor,
     },
-    {
-      title: "Chatty",
-      description:
-        "A realtime chatting application build using websockets where users can chat with each other and send text messages, images and more. (similar to WhatsApp)",
-      image: "/chatty.png",
-      tags: ["React.js", "TypeScript", "TailwindCSS", "Websocket", "Prisma"],
-      github: "https://github.com/nileshpahari/chatty",
-      // liveLink: "https://chatty.netlify.app/",
-      tagColor: "blue",
-    },
+
     {
       title: "React Blog",
       description:
@@ -114,6 +112,16 @@ export function Project() {
       tagColor: "gray" as ProjectColor,
     },
     {
+      title: "Chatty",
+      description:
+        "A realtime chatting application build using websockets where users can chat with each other and send text messages, images and more. (similar to WhatsApp)",
+      image: "/chatty.png",
+      tags: ["React.js", "TypeScript", "TailwindCSS", "Websocket", "Prisma"],
+      github: "https://github.com/nileshpahari/chatty",
+      // liveLink: "https://chatty.netlify.app/",
+      tagColor: "blue",
+    },
+    {
       title: "Carbon Sense",
       description:
         "A 24 hour hackathon project that calculates your annual carbon footprint emmision and gives AI based suggestions to reduce it.",
@@ -134,17 +142,19 @@ export function Project() {
         >
           <div
             className={`relative h-full w-full bg-black/20 rounded-lg p-6
-            ${!isLowPerformance
+            ${
+              !isLowPerformance
                 ? "backdrop-blur-sm group-hover:scale-[1.02] transition-transform duration-300"
                 : "group-hover:scale-[1.01] transition-transform duration-300"
-              }`}
+            }`}
           >
             <div
               className={`absolute -inset-[1.5px] rounded-lg opacity-0 group-hover:opacity-100 
-              transition-opacity duration-300 ${isLowPerformance
+              transition-opacity duration-300 ${
+                isLowPerformance
                   ? `border-2 ${projectStyles[project.tagColor].border}`
                   : projectStyles[project.tagColor].hover
-                }`}
+              }`}
             />
 
             <div className="relative z-20">
@@ -168,8 +178,9 @@ export function Project() {
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`text-white transition-colors border-2 ${projectStyles[project.tagColor].border
-                      } p-2 rounded-full`}
+                    className={`text-white transition-colors border-2 ${
+                      projectStyles[project.tagColor].border
+                    } p-2 rounded-full`}
                   >
                     Live Demo
                   </a>
@@ -188,8 +199,9 @@ export function Project() {
                 {project.tags.map((tag, tagIndex) => (
                   <span
                     key={tagIndex}
-                    className={`px-3 py-1 text-xs font-medium text-white/80 rounded-full ${projectStyles[project.tagColor].tag
-                      }`}
+                    className={`px-3 py-1 text-xs font-medium text-white/80 rounded-full ${
+                      projectStyles[project.tagColor].tag
+                    }`}
                   >
                     {tag}
                   </span>
@@ -200,12 +212,14 @@ export function Project() {
 
           <div
             className={`absolute -inset-2 rounded-lg opacity-0 group-hover:opacity-100 
-            transition-opacity duration-500 pointer-events-none ${isLowPerformance
+            transition-opacity duration-500 pointer-events-none ${
+              isLowPerformance
                 ? `border ${projectStyles[project.tagColor].border}`
                 : `border-2 ${projectStyles[project.tagColor].border} 
-                    border-t-0 border-l-0 ${projectStyles[project.tagColor].glow
-                }`
-              }`}
+                    border-t-0 border-l-0 ${
+                      projectStyles[project.tagColor].glow
+                    }`
+            }`}
           />
         </div>
       ))}
