@@ -76,7 +76,7 @@ export function Project() {
       description:
         "A web app that where users can see upcoming coding contests from various platforms like Codeforces, Leetcode, CodeChef, etc. and bookmark them for later. They can also enable notifications for the contests they are interested in.",
       image: "/contestpulse.jpeg",
-      liveLink: "https://contestpulse.netlify.app/",
+      liveLink: "https://contest-pulse.vercel.app/",
       github: "https://github.com/nileshpahari/contest-pulse",
       tags: ["Next.js", "TypeScript", "TailwindCSS", "NextAuth", "Prima"],
       tagColor: "red" as ProjectColor,
@@ -142,19 +142,17 @@ export function Project() {
         >
           <div
             className={`relative h-full w-full bg-black/20 rounded-lg p-6
-            ${
-              !isLowPerformance
+            ${!isLowPerformance
                 ? "backdrop-blur-sm group-hover:scale-[1.02] transition-transform duration-300"
                 : "group-hover:scale-[1.01] transition-transform duration-300"
-            }`}
+              }`}
           >
             <div
               className={`absolute -inset-[1.5px] rounded-lg opacity-0 group-hover:opacity-100 
-              transition-opacity duration-300 ${
-                isLowPerformance
+              transition-opacity duration-300 ${isLowPerformance
                   ? `border-2 ${projectStyles[project.tagColor].border}`
                   : projectStyles[project.tagColor].hover
-              }`}
+                }`}
             />
 
             <div className="relative z-20">
@@ -178,9 +176,8 @@ export function Project() {
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`text-white transition-colors border-2 ${
-                      projectStyles[project.tagColor].border
-                    } p-2 rounded-full`}
+                    className={`text-white transition-colors border-2 ${projectStyles[project.tagColor].border
+                      } p-2 rounded-full`}
                   >
                     Live Demo
                   </a>
@@ -199,9 +196,8 @@ export function Project() {
                 {project.tags.map((tag, tagIndex) => (
                   <span
                     key={tagIndex}
-                    className={`px-3 py-1 text-xs font-medium text-white/80 rounded-full ${
-                      projectStyles[project.tagColor].tag
-                    }`}
+                    className={`px-3 py-1 text-xs font-medium text-white/80 rounded-full ${projectStyles[project.tagColor].tag
+                      }`}
                   >
                     {tag}
                   </span>
@@ -212,14 +208,12 @@ export function Project() {
 
           <div
             className={`absolute -inset-2 rounded-lg opacity-0 group-hover:opacity-100 
-            transition-opacity duration-500 pointer-events-none ${
-              isLowPerformance
+            transition-opacity duration-500 pointer-events-none ${isLowPerformance
                 ? `border ${projectStyles[project.tagColor].border}`
                 : `border-2 ${projectStyles[project.tagColor].border} 
-                    border-t-0 border-l-0 ${
-                      projectStyles[project.tagColor].glow
-                    }`
-            }`}
+                    border-t-0 border-l-0 ${projectStyles[project.tagColor].glow
+                }`
+              }`}
           />
         </div>
       ))}
