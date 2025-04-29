@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import { SiGithub, SiCodeforces, SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 
 export function Navbar() {
   return (
@@ -24,14 +23,6 @@ export function Navbar() {
               className="text-white hover:text-orange-500 transition-all duration-300 hover:scale-110 relative group  "
             >
               <SiGithub className="w-6 h-6" />
-              <span className="absolute -inset-2 bg-orange-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </Link>
-            <Link
-              href="https://x.com/nileshpahari"
-              target="_blank"
-              className="text-white hover:text-orange-500 transition-all duration-300 hover:scale-110 relative group  "
-            >
-              <FaXTwitter className="w-6 h-6" />
               <span className="absolute -inset-2 bg-orange-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </Link>
             <Link
