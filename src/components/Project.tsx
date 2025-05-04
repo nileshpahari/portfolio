@@ -65,6 +65,12 @@ const projectStyles = {
     glow: "shadow-[0_0_15px_rgba(156,163,175,0.7)]",
     hover: "bg-gray-500/50",
   },
+  purple: {
+    border: "border-purple-500",
+    tag: "bg-purple-500/20 border-purple-500/30",
+    glow: "shadow-[0_0_15px_rgba(168,85,247,0.7)]",
+    hover: "bg-purple-500/50",
+  },
 };
 
 export function Project() {
@@ -76,7 +82,7 @@ export function Project() {
       description:
         "A web app that where users can see upcoming coding contests from various platforms like Codeforces, Leetcode, CodeChef, etc. and bookmark them for later. They can also enable notifications for the contests they are interested in.",
       image: "/contestpulse.jpeg",
-      liveLink: "https://contest-pulse.vercel.app/",
+      liveLink: "https://contestpulse.netlify.app/",
       github: "https://github.com/nileshpahari/contest-pulse",
       tags: ["Next.js", "TypeScript", "TailwindCSS", "NextAuth", "Prima"],
       tagColor: "red" as ProjectColor,
@@ -110,6 +116,16 @@ export function Project() {
       github: "https://github.com/nileshpahari/topchess",
       tags: ["React", "TailwindCSS", "WebSockets", "TypeScript", "Prisma"],
       tagColor: "gray" as ProjectColor,
+    },
+    {
+      title: "Web3 Wallet",
+      description:
+        "A simple web based wallet where users can store their private keys and interact with smart contracts",
+      image: "/wallet.png",
+      tags: ["Next.js", "TypeScript", "TailwindCSS"],
+      github: "https://github.com/nileshpahari/simple-web-wallet",
+      liveLink: "https://simple-web-wallet.netlify.app/",
+      tagColor: "purple" as ProjectColor,
     },
     {
       title: "Chatty",
