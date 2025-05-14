@@ -127,16 +127,16 @@ export function Project() {
       liveLink: "https://simple-web-wallet.netlify.app/",
       tagColor: "purple" as ProjectColor,
     },
-    {
-      title: "Chatty",
-      description:
-        "A realtime chatting application build using websockets where users can chat with each other and send text messages, images and more. (similar to WhatsApp)",
-      image: "/chatty.png",
-      tags: ["React.js", "TypeScript", "TailwindCSS", "Websocket", "Prisma"],
-      github: "https://github.com/nileshpahari/chatty",
-      // liveLink: "https://chatty.netlify.app/",
-      tagColor: "blue",
-    },
+    /*    {
+          title: "Chatty",
+          description:
+            "A realtime chatting application build using websockets where users can chat with each other and send text messages, images and more. (similar to WhatsApp)",
+          image: "/chatty.png",
+          tags: ["React.js", "TypeScript", "TailwindCSS", "Websocket", "Prisma"],
+          github: "https://github.com/nileshpahari/chatty",
+          // liveLink: "https://chatty.netlify.app/",
+          tagColor: "blue",
+        },*/
     {
       title: "Carbon Sense",
       description:
