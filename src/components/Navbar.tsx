@@ -41,14 +41,14 @@ export function Navbar() {
               <FaLinkedin className="w-6 h-6" />
               <span className="absolute -inset-2 bg-orange-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </Link>
-            <Link
+            {/*  <Link
               href="https://leetcode.com/u/nileshpahari/"
               target="_blank"
               className="text-white hover:text-orange-500 transition-all duration-300 hover:scale-110 relative group"
             >
               <SiLeetcode className="w-6 h-6" />
               <span className="absolute -inset-2 bg-orange-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </Link>
+            </Link>*/}
             <Link
               href="https://codeforces.com/profile/scar-face"
               target="_blank"

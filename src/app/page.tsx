@@ -40,7 +40,7 @@ export default function Home() {
               <p className="text-lg font-bold text-white leading-relaxed">
                 I love exploring computer science concepts, especially their
                 theoretical aspects. I also build cool automation scripts with
-                Bash and Python, and I&apos;m currently doing Competitive Programming and Web 3.0.
+                Bash and Python, and I&apos;m currently learning Web 3.0 stuff.
               </p>
             </div>
           </div>
