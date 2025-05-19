@@ -21,6 +21,7 @@ import {
   SiRedis,
   SiGit,
   SiVercel,
+  SiRust,
 } from "react-icons/si";
 
 export function Stacks() {
@@ -52,6 +53,7 @@ export function Stacks() {
     { Icon: SiRedis, name: "Redis", color: "text-red-500" },
     { Icon: SiVercel, name: "Vercel", color: "text-white" },
     { Icon: FaAws, name: "AWS", color: "text-red-500" }, 
+    {Icon: SiRust, name: "Rust", color: "text-red-500"}
   ];
 
   return (
