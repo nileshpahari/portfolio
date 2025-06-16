@@ -124,7 +124,7 @@ export function Project() {
       image: "/wallet.png",
       tags: ["Next.js", "TypeScript", "TailwindCSS"],
       github: "https://github.com/nileshpahari/simple-web-wallet",
-      liveLink: "https://simple-web-wallet.netlify.app/",
+      //liveLink: "https://simple-web-wallet.netlify.app/",
       tagColor: "purple" as ProjectColor,
     },
     /*    {
