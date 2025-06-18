@@ -87,6 +87,15 @@ export function Project() {
       tags: ["Next.js", "TypeScript", "TailwindCSS", "NextAuth", "Prima"],
       tagColor: "red" as ProjectColor,
     },
+    {
+      title: "Codeforces MCP",
+      description:
+        "A MCP server for Codeforces that can be used to fetch different resources from Codeforces.",
+      image: "/cfmcp.png",
+      github: "https://github.com/nileshpahari/codeforces-mcp",
+      tags: ["Node.js", "TypeScript", "zod"],
+      tagColor: "pink" as ProjectColor,
+    },
 
     {
       title: "React Blog",
