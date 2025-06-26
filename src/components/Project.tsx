@@ -90,7 +90,7 @@ export function Project() {
     {
       title: "CF MCP Server",
       description:
-        "A MCP server for Codeforces that can be used to fetch different resources from Codeforces.",
+        "A MCP server for Codeforces that can be used to fetch different resources from Codeforces. (work in progress)",
       image: "/cfmcp.png",
       github: "https://github.com/nileshpahari/codeforces-mcp",
       tags: ["Node.js", "TypeScript", "zod"],
@@ -136,16 +136,16 @@ export function Project() {
         //liveLink: "https://simple-web-wallet.netlify.app/",
         tagColor: "purple" as ProjectColor,
       },*/
-    /*    {
+    {
           title: "Chatty",
           description:
-            "A realtime chatting application build using websockets where users can chat with each other and send text messages, images and more. (similar to WhatsApp)",
+            "A realtime chatting application build using websockets where users can chat with each other and send text messages, images and more. (similar to WhatsApp)(work in progress)",
           image: "/chatty.png",
           tags: ["React.js", "TypeScript", "TailwindCSS", "Websocket", "Prisma"],
           github: "https://github.com/nileshpahari/chatty",
           // liveLink: "https://chatty.netlify.app/",
           tagColor: "blue",
-        },*/
+        },
     {
       title: "Carbon Sense",
       description:
