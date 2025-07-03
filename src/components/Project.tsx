@@ -85,7 +85,17 @@ export function Project() {
       liveLink: "https://contestpulse.netlify.app/",
       github: "https://github.com/nileshpahari/contest-pulse",
       tags: ["Next.js", "TypeScript", "TailwindCSS", "NextAuth", "Prima"],
-      tagColor: "red" as ProjectColor,
+      tagColor: "green" as ProjectColor,
+    },
+     {
+      title: "Clipzo",
+      description:
+         "A web app that allows users to download video/audio from youtube and other platforms with custom options using yt-dlp and ffmpeg.",
+      image: "/clipzo.jpg",
+      liveLink: "https://clipzo.vercel.app/",
+      github: "https://github.com/nileshpahari/clipzo",
+      tags: ["Next.js", "Express", "yt-dlp", "FFmpeg", "Prisma"],
+      tagColor: "pink" as ProjectColor,
     },
     {
       title: "CF MCP Server",
@@ -94,9 +104,8 @@ export function Project() {
       image: "/cfmcp.png",
       github: "https://github.com/nileshpahari/codeforces-mcp",
       tags: ["Node.js", "TypeScript", "zod"],
-      tagColor: "pink" as ProjectColor,
+      tagColor: "blue" as ProjectColor,
     },
-
     {
       title: "React Blog",
       description:
@@ -139,7 +148,7 @@ export function Project() {
     {
           title: "Chatty",
           description:
-            "A realtime chatting application build using websockets where users can chat with each other and send text messages, images and more. (similar to WhatsApp)(work in progress)",
+            "A realtime chatting application build using websockets where users can chat with each other and send text messages, images and more. (similar to WhatsApp)",
           image: "/chatty.png",
           tags: ["React.js", "TypeScript", "TailwindCSS", "Websocket", "Prisma"],
           github: "https://github.com/nileshpahari/chatty",
