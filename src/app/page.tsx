@@ -2,7 +2,7 @@
 import { Suspense } from "react";
 import Image from "next/image";
 import { Header } from "@/components/Header";
-import { Buttons } from "@/components/Buttons";
+import { ProjectsButton } from "@/components/Buttons";
 import { Back } from "@/components/Back";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { Navbar } from "@/components/Navbar";
@@ -47,7 +47,7 @@ export default function Home() {
 
           {/* Buttons */}
           <div className="mt-24">
-            <Buttons />
+            <ProjectsButton />
           </div>
         </header>
       </Suspense>

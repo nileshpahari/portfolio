@@ -3,7 +3,7 @@ import React from "react";
 import { Button } from "./ui/moving-border";
 import { useRouter } from "next/navigation";
 
-export function Buttons() {
+export function ProjectsButton() {
   const router = useRouter();
 
   return (
