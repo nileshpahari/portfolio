@@ -87,10 +87,10 @@ export function Project() {
       tags: ["Next.js", "TypeScript", "TailwindCSS", "NextAuth", "Prima"],
       tagColor: "green" as ProjectColor,
     },
-     {
+    {
       title: "Clipzo",
       description:
-         "A web app that allows users to download video/audio from youtube and other platforms with custom options using yt-dlp and ffmpeg.",
+        "A web app that allows users to download video/audio from youtube and other platforms with custom options using yt-dlp and ffmpeg.",
       image: "/clipzo.jpg",
       liveLink: "https://clipzo.vercel.app/",
       github: "https://github.com/nileshpahari/clipzo",
@@ -100,7 +100,7 @@ export function Project() {
     {
       title: "CF MCP Server",
       description:
-        "A MCP server for Codeforces that can be used to fetch different resources from Codeforces. (work in progress)",
+        "A MCP server for Codeforces that can be used to fetch different resources from Codeforces.",
       image: "/cfmcp.png",
       github: "https://github.com/nileshpahari/codeforces-mcp",
       tags: ["Node.js", "TypeScript", "zod"],
@@ -146,15 +146,15 @@ export function Project() {
         tagColor: "purple" as ProjectColor,
       },*/
     {
-          title: "Chatty",
-          description:
-            "A realtime chatting application build using websockets where users can chat with each other and send text messages, images and more. (similar to WhatsApp)",
-          image: "/chatty.png",
-          tags: ["React.js", "TypeScript", "TailwindCSS", "Websocket", "Prisma"],
-          github: "https://github.com/nileshpahari/chatty",
-          // liveLink: "https://chatty.netlify.app/",
-          tagColor: "blue",
-        },
+      title: "Chatty",
+      description:
+        "A realtime chatting application build using websockets where users can chat with each other and send text messages, images and more. (similar to WhatsApp)",
+      image: "/chatty.png",
+      tags: ["React.js", "TypeScript", "TailwindCSS", "Websocket", "Prisma"],
+      github: "https://github.com/nileshpahari/chatty",
+      // liveLink: "https://chatty.netlify.app/",
+      tagColor: "blue",
+    },
     {
       title: "Carbon Sense",
       description:
