@@ -84,7 +84,7 @@ export function Project() {
       image: "/contestpulse.jpeg",
       liveLink: "https://contestpulse.netlify.app/",
       github: "https://github.com/nileshpahari/contest-pulse",
-      tags: ["Next.js", "TypeScript", "TailwindCSS", "NextAuth", "Prima"],
+      tags: ["Next.js", "TypeScript", "TailwindCSS", "NextAuth", "Prisma"],
       tagColor: "green" as ProjectColor,
     },
     {
@@ -94,7 +94,7 @@ export function Project() {
       image: "/clipzo.jpg",
       liveLink: "https://clipzo.vercel.app/",
       github: "https://github.com/nileshpahari/clipzo",
-      tags: ["Next.js", "Express", "yt-dlp", "FFmpeg", "Prisma"],
+      tags: ["Rust", "TypeScript", "Next.js", "Axum", "yt-dlp", "FFmpeg", "Prisma"],
       tagColor: "pink" as ProjectColor,
     },
     {
@@ -102,6 +102,7 @@ export function Project() {
       description:
         "A MCP server for Codeforces that can be used to fetch different resources from Codeforces.",
       image: "/cfmcp.png",
+      liveLink: "https://cf-mcp.vercel.app/",
       github: "https://github.com/nileshpahari/codeforces-mcp",
       tags: ["Node.js", "TypeScript", "zod"],
       tagColor: "blue" as ProjectColor,
@@ -120,7 +121,7 @@ export function Project() {
       title: "Media Sphere",
       description: "Backend of a media sharing platform (similar to YouTube)",
       image: "/mediasphere.jpeg",
-      liveLink: "",
+      // liveLink: "",
       github: "https://github.com/nileshpahari/media-sphere/",
       tags: ["Node.js", "Express", "MongoDB", "TypeScript"],
       tagColor: "red" as ProjectColor,
