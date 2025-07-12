@@ -136,16 +136,16 @@ export function Project() {
       tags: ["React", "TailwindCSS", "WebSockets", "TypeScript", "Prisma"],
       tagColor: "gray" as ProjectColor,
     },
-    /*  {
-        title: "Web3 Wallet",
-        description:
-          "A simple web based wallet where users can store their private keys and interact with smart contracts",
-        image: "/wallet.png",
-        tags: ["Next.js", "TypeScript", "TailwindCSS"],
-        github: "https://github.com/nileshpahari/simple-web-wallet",
-        //liveLink: "https://simple-web-wallet.netlify.app/",
-        tagColor: "purple" as ProjectColor,
-      },*/
+    {
+      title: "Web3 Wallet",
+      description:
+        "A simple web based wallet where users can store their private keys and interact with smart contracts",
+      image: "/wallet.png",
+      tags: ["Next.js", "TypeScript", "TailwindCSS"],
+      github: "https://github.com/nileshpahari/simple-web-wallet",
+      //liveLink: "https://simple-web-wallet.netlify.app/",
+      tagColor: "purple" as ProjectColor,
+    },
     {
       title: "Chatty",
       description:
