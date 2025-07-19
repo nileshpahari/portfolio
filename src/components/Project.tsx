@@ -108,6 +108,16 @@ export function Project() {
       tagColor: "blue" as ProjectColor,
     },
     {
+      title: "Web3 Wallet",
+      description:
+        "A simple web based wallet where users can store their private keys and interact with smart contracts",
+      image: "/wallet.png",
+      tags: ["Next.js", "TypeScript", "TailwindCSS"],
+      github: "https://github.com/nileshpahari/walliy",
+      liveLink: "https://walliy.vercel.app/",
+      tagColor: "purple" as ProjectColor,
+    },
+    {
       title: "React Blog",
       description:
         "Simple blogging application (similar to medium, but doesnt have all the features) where user create, read, update and delete articles",
@@ -135,16 +145,6 @@ export function Project() {
       github: "https://github.com/nileshpahari/topchess",
       tags: ["React", "TailwindCSS", "WebSockets", "TypeScript", "Prisma"],
       tagColor: "gray" as ProjectColor,
-    },
-    {
-      title: "Web3 Wallet",
-      description:
-        "A simple web based wallet where users can store their private keys and interact with smart contracts",
-      image: "/wallet.png",
-      tags: ["Next.js", "TypeScript", "TailwindCSS"],
-      github: "https://github.com/nileshpahari/simple-web-wallet",
-      //liveLink: "https://simple-web-wallet.netlify.app/",
-      tagColor: "purple" as ProjectColor,
     },
     {
       title: "Chatty",
