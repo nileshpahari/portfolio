@@ -23,7 +23,7 @@ export const DATA = {
     "MySQL",
     "WebSockets",
     "Redux",
-    "Linux (Desktop)",
+    "GNU/Linux",
     "C++",
     "Python",
     "Git",
@@ -31,11 +31,11 @@ export const DATA = {
     "Vercel",
     "AWS",
     "Rust",
-],
+  ],
 
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    {href:"/resume.pdf", icon:Download, label: "Resume"}
+    { href: "/resume.pdf", icon: Download, label: "Resume" }
     // { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
@@ -79,18 +79,18 @@ export const DATA = {
   },
 
   // work: [
-    // {
-    //   company: "Google Developer Groups",
-    //   href: "https://gdghit.site",
-    //   badges: [],
-    //   location: "Haldia, India",
-    //   title: "Web Developer",
-    //   logoUrl: "/gdg.png",
-    //   start: "March 2025",
-    //   end: "Present",
-    //   description:
-    //     "Developed a website for Google Developer Groups Haldia. Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
-    // },
+  // {
+  //   company: "Google Developer Groups",
+  //   href: "https://gdghit.site",
+  //   badges: [],
+  //   location: "Haldia, India",
+  //   title: "Web Developer",
+  //   logoUrl: "/gdg.png",
+  //   start: "March 2025",
+  //   end: "Present",
+  //   description:
+  //     "Developed a website for Google Developer Groups Haldia. Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+  // },
   // ],
   education: [
     {
@@ -107,208 +107,208 @@ export const DATA = {
       href: "https://contestpulse.netlify.app/",
       dates: "Jan 2024 - Present",
       active: true,
-    description:
-      "A web app where users can see upcoming coding contests from various platforms like Codeforces, Leetcode, CodeChef, etc., bookmark them, and enable notifications.",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "TailwindCSS",
-      "NextAuth",
-      "Prisma",
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://contestpulse.netlify.app/",
-        icon: <Icons.globe className="size-3" />,
-      },
-      {
-        type: "GitHub",
-        href: "https://github.com/nileshpahari/contest-pulse",
-        icon: <Icons.github className="size-3" />,
-      },
-    ],
-    image: "/contestpulse.jpeg",
-    video: "",
-  },
-  {
-    title: "Clipzo",
-    href: "https://clipzo.vercel.app/",
-    dates: "Mar 2024 - Present",
-    active: true,
-    description:
-      "A web app to download videos or audio from YouTube and other platforms using yt-dlp and FFmpeg, with custom options.",
-    technologies: [
-      "Rust",
-      "TypeScript",
-      "Next.js",
-      "Axum",
-      "yt-dlp",
-      "FFmpeg",
-      "Prisma",
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://clipzo.vercel.app/",
-        icon: <Icons.globe className="size-3" />,
-      },
-      {
-        type: "GitHub",
-        href: "https://github.com/nileshpahari/clipzo",
-        icon: <Icons.github className="size-3" />,
-      },
-    ],
-    image: "/clipzo.jpg",
-    video: "",
-  },
-  {
-    title: "CF MCP Server",
-    href: "https://cf-mcp.vercel.app/",
-    dates: "Feb 2024 - Mar 2024",
-    active: false,
-    description:
-      "A MCP server for Codeforces to fetch contest data and other resources programmatically.",
-    technologies: ["Node.js", "TypeScript", "zod"],
-    links: [
-      {
-        type: "Website",
-        href: "https://cf-mcp.vercel.app/",
-        icon: <Icons.globe className="size-3" />,
-      },
-      {
-        type: "GitHub",
-        href: "https://github.com/nileshpahari/codeforces-mcp",
-        icon: <Icons.github className="size-3" />,
-      },
-    ],
-    image: "/cfmcp.png",
-    video: "",
-  },
-  {
-    title: "Walliy",
-    href: "https://walliy.vercel.app/",
-    dates: "Oct 2023 - Dec 2023",
-    active: false,
-    description:
-      "A web-based crypto wallet where users can store private keys and interact with smart contracts.",
-    technologies: ["Next.js", "TypeScript", "TailwindCSS"],
-    links: [
-      {
-        type: "GitHub",
-        href: "https://github.com/nileshpahari/walliy",
-        icon: <Icons.github className="size-3" />,
-      },
-    ],
-    image: "/wallet.png",
-    video: "",
-  },
-  {
-    title: "React Blog",
-    href: "https://basic-react-blogging-app.netlify.app/",
-    dates: "Sep 2023 - Oct 2023",
-    active: false,
-    description:
-      "A blogging platform like Medium, allowing users to create, read, update, and delete articles.",
-    technologies: ["React", "Redux", "TailwindCSS", "TinyMCE", "Appwrite"],
-    links: [
-      {
-        type: "Website",
-        href: "https://basic-react-blogging-app.netlify.app/",
-        icon: <Icons.globe className="size-3" />,
-      },
-      {
-        type: "GitHub",
-        href: "https://github.com/nileshpahari/react-blog",
-        icon: <Icons.github className="size-3" />,
-      },
-    ],
-    image: "/reactblog.webp",
-    video: "",
-  },
-  {
-    title: "Media Sphere",
-    href: "",
-    dates: "Aug 2023",
-    active: false,
-    description: "Backend for a media sharing platform similar to YouTube.",
-    technologies: ["Node.js", "Express", "MongoDB", "TypeScript"],
-    links: [
-      {
-        type: "GitHub",
-        href: "https://github.com/nileshpahari/media-sphere/",
-        icon: <Icons.github className="size-3" />,
-      },
-    ],
-    image: "/mediasphere.jpeg",
-    video: "",
-  },
-  {
-    title: "Top Chess",
-    href: "https://topchess.netlify.app/",
-    dates: "May 2023 - Jun 2023",
-    active: false,
-    description:
-      "A multiplayer real-time chess platform similar to chess.com or lichess.org.",
-    technologies: ["React", "TailwindCSS", "WebSockets", "TypeScript", "Prisma"],
-    links: [
-      {
-        type: "GitHub",
-        href: "https://github.com/nileshpahari/topchess",
-        icon: <Icons.github className="size-3" />,
-      },
-    ],
-    image: "/topchess.jpeg",
-    video: "",
-  },
-  {
-    title: "Chatty",
-    href: "https://chatty.netlify.app/",
-    dates: "Jun 2023",
-    active: false,
-    description:
-      "A real-time chat app like WhatsApp supporting text and image messages using WebSockets.",
-    technologies: [
-      "React.js",
-      "TypeScript",
-      "TailwindCSS",
-      "Websocket",
-      "Prisma",
-    ],
-    links: [
-      {
-        type: "GitHub",
-        href: "https://github.com/nileshpahari/chatty",
-        icon: <Icons.github className="size-3" />,
-      },
-    ],
-    image: "/chatty.png",
-    video: "",
-  },
-  {
-    title: "Carbon Sense",
-    href: "https://innovocon2k25.vercel.app/",
-    dates: "Apr 2024 (24hr Hackathon)",
-    active: false,
-    description:
-      "A hackathon project that calculates annual carbon footprint and provides AI-powered suggestions to reduce it.",
-    technologies: ["Next.js", "TailwindCSS", "OpenAI API"],
-    links: [
-      {
-        type: "Website",
-        href: "https://innovocon2k25.vercel.app/",
-        icon: <Icons.globe className="size-3" />,
-      },
-      {
-        type: "GitHub",
-        href: "https://github.com/nileshpahari/innovocon2025",
-        icon: <Icons.github className="size-3" />,
-      },
-    ],
-    image: "/carbonsense.avif",
-    video: "",
-  },
-],
+      description:
+        "A web app where users can see upcoming coding contests from various platforms like Codeforces, Leetcode, CodeChef, etc., bookmark them, and enable notifications.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "TailwindCSS",
+        "NextAuth",
+        "Prisma",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://contestpulse.netlify.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/nileshpahari/contest-pulse",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/contestpulse.jpeg",
+      video: "",
+    },
+    {
+      title: "Clipzo",
+      href: "https://clipzo.vercel.app/",
+      dates: "Mar 2024 - Present",
+      active: true,
+      description:
+        "A web app to download videos or audio from YouTube and other platforms using yt-dlp and FFmpeg, with custom options.",
+      technologies: [
+        "Rust",
+        "TypeScript",
+        "Next.js",
+        "Axum",
+        "yt-dlp",
+        "FFmpeg",
+        "Prisma",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://clipzo.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/nileshpahari/clipzo",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/clipzo.jpg",
+      video: "",
+    },
+    {
+      title: "CF MCP Server",
+      href: "https://cf-mcp.vercel.app/",
+      dates: "Feb 2024 - Mar 2024",
+      active: false,
+      description:
+        "A MCP server for Codeforces to fetch contest data and other resources programmatically.",
+      technologies: ["Node.js", "TypeScript", "zod"],
+      links: [
+        {
+          type: "Website",
+          href: "https://cf-mcp.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/nileshpahari/codeforces-mcp",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/cfmcp.png",
+      video: "",
+    },
+    {
+      title: "Walliy",
+      href: "https://walliy.vercel.app/",
+      dates: "Oct 2023 - Dec 2023",
+      active: false,
+      description:
+        "A web-based crypto wallet where users can store private keys and interact with smart contracts.",
+      technologies: ["Next.js", "TypeScript", "TailwindCSS"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/nileshpahari/walliy",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/wallet.png",
+      video: "",
+    },
+    {
+      title: "React Blog",
+      href: "https://basic-react-blogging-app.netlify.app/",
+      dates: "Sep 2023 - Oct 2023",
+      active: false,
+      description:
+        "A blogging platform like Medium, allowing users to create, read, update, and delete articles.",
+      technologies: ["React", "Redux", "TailwindCSS", "TinyMCE", "Appwrite"],
+      links: [
+        {
+          type: "Website",
+          href: "https://basic-react-blogging-app.netlify.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/nileshpahari/react-blog",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/reactblog.webp",
+      video: "",
+    },
+    {
+      title: "Media Sphere",
+      href: "",
+      dates: "Aug 2023",
+      active: false,
+      description: "Backend for a media sharing platform similar to YouTube.",
+      technologies: ["Node.js", "Express", "MongoDB", "TypeScript"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/nileshpahari/media-sphere/",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/mediasphere.jpeg",
+      video: "",
+    },
+    {
+      title: "Top Chess",
+      href: "https://topchess.netlify.app/",
+      dates: "May 2023 - Jun 2023",
+      active: false,
+      description:
+        "A multiplayer real-time chess platform similar to chess.com or lichess.org.",
+      technologies: ["React", "TailwindCSS", "WebSockets", "TypeScript", "Prisma"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/nileshpahari/topchess",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/topchess.jpeg",
+      video: "",
+    },
+    {
+      title: "Chatty",
+      href: "https://chatty.netlify.app/",
+      dates: "Jun 2023",
+      active: false,
+      description:
+        "A real-time chat app like WhatsApp supporting text and image messages using WebSockets.",
+      technologies: [
+        "React.js",
+        "TypeScript",
+        "TailwindCSS",
+        "Websocket",
+        "Prisma",
+      ],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/nileshpahari/chatty",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/chatty.png",
+      video: "",
+    },
+    {
+      title: "Carbon Sense",
+      href: "https://innovocon2k25.vercel.app/",
+      dates: "Apr 2024 (24hr Hackathon)",
+      active: false,
+      description:
+        "A hackathon project that calculates annual carbon footprint and provides AI-powered suggestions to reduce it.",
+      technologies: ["Next.js", "TailwindCSS", "OpenAI API"],
+      links: [
+        {
+          type: "Website",
+          href: "https://innovocon2k25.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/nileshpahari/innovocon2025",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/carbonsense.avif",
+      video: "",
+    },
+  ],
 
   hackathons: [
     // {
