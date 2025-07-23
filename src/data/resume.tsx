@@ -105,7 +105,6 @@ export const DATA = {
     {
       title: "Contest Pulse",
       href: "https://contestpulse.netlify.app/",
-      dates: "Jan 2024 - Present",
       active: true,
       description:
         "A web app where users can see upcoming coding contests from various platforms like Codeforces, Leetcode, CodeChef, etc., bookmark them, and enable notifications.",
@@ -134,7 +133,6 @@ export const DATA = {
     {
       title: "Clipzo",
       href: "https://clipzo.vercel.app/",
-      dates: "Mar 2024 - Present",
       active: true,
       description:
         "A web app to download videos or audio from YouTube and other platforms using yt-dlp and FFmpeg, with custom options.",
@@ -165,7 +163,6 @@ export const DATA = {
     {
       title: "CF MCP Server",
       href: "https://cf-mcp.vercel.app/",
-      dates: "Feb 2024 - Mar 2024",
       active: false,
       description:
         "A MCP server for Codeforces to fetch contest data and other resources programmatically.",
@@ -188,7 +185,6 @@ export const DATA = {
     {
       title: "Walliy",
       href: "https://walliy.vercel.app/",
-      dates: "Oct 2023 - Dec 2023",
       active: false,
       description:
         "A web-based crypto wallet where users can store private keys and interact with smart contracts.",
@@ -206,7 +202,6 @@ export const DATA = {
     {
       title: "React Blog",
       href: "https://basic-react-blogging-app.netlify.app/",
-      dates: "Sep 2023 - Oct 2023",
       active: false,
       description:
         "A blogging platform like Medium, allowing users to create, read, update, and delete articles.",
@@ -229,7 +224,6 @@ export const DATA = {
     {
       title: "Media Sphere",
       href: "",
-      dates: "Aug 2023",
       active: false,
       description: "Backend for a media sharing platform similar to YouTube.",
       technologies: ["Node.js", "Express", "MongoDB", "TypeScript"],
@@ -246,7 +240,6 @@ export const DATA = {
     {
       title: "Top Chess",
       href: "https://topchess.netlify.app/",
-      dates: "May 2023 - Jun 2023",
       active: false,
       description:
         "A multiplayer real-time chess platform similar to chess.com or lichess.org.",
@@ -264,7 +257,6 @@ export const DATA = {
     {
       title: "Chatty",
       href: "https://chatty.netlify.app/",
-      dates: "Jun 2023",
       active: false,
       description:
         "A real-time chat app like WhatsApp supporting text and image messages using WebSockets.",
@@ -288,7 +280,6 @@ export const DATA = {
     {
       title: "Carbon Sense",
       href: "https://innovocon2k25.vercel.app/",
-      dates: "Apr 2024 (24hr Hackathon)",
       active: false,
       description:
         "A hackathon project that calculates annual carbon footprint and provides AI-powered suggestions to reduce it.",
