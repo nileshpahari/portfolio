@@ -11,7 +11,7 @@ export const DATA = {
     "engineer | cs noob | harmonicist",
   summary:
     "I like exploring computer science concepts, especially their theoretical aspects. I'm currently learning Web 3.0 stuff.",
-  avatarUrl: "/me.png",
+  avatarUrl: "/lucy.jpg",
   skills: [
     "TypeScript",
     "JavaScript",
@@ -190,6 +190,11 @@ export const DATA = {
         "A web-based crypto wallet where users can store private keys and interact with smart contracts.",
       technologies: ["Next.js", "TypeScript", "TailwindCSS"],
       links: [
+        {
+          type: "Website",
+          href: "https://walliy.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
         {
           type: "GitHub",
           href: "https://github.com/nileshpahari/walliy",
