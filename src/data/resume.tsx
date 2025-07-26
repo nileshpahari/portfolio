@@ -11,7 +11,7 @@ export const DATA = {
     "engineer | cs noob | harmonicist",
   summary:
     "I like exploring computer science concepts, especially their theoretical aspects. I'm currently learning Web 3.0 stuff.",
-  avatarUrl: "/lucy.jpg",
+  avatarUrl: "/me.jpg",
   skills: [
     "TypeScript",
     "JavaScript",
