@@ -146,11 +146,11 @@ export const DATA = {
         "Prisma",
       ],
       links: [
-        {
+        /*{
           type: "Website",
           href: "https://clipzo.vercel.app/",
           icon: <Icons.globe className="size-3" />,
-        },
+        },*/
         {
           type: "GitHub",
           href: "https://github.com/nileshpahari/clipzo",
@@ -168,11 +168,11 @@ export const DATA = {
         "A MCP server for Codeforces to fetch contest data and other resources programmatically.",
       technologies: ["Node.js", "TypeScript", "zod"],
       links: [
-        {
+        /*{
           type: "Website",
           href: "https://cf-mcp.vercel.app/",
           icon: <Icons.globe className="size-3" />,
-        },
+        },*/
         {
           type: "GitHub",
           href: "https://github.com/nileshpahari/codeforces-mcp",
