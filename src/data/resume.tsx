@@ -188,7 +188,7 @@ export const DATA = {
       active: false,
       description:
         "A web-based crypto wallet where users can store private keys and interact with smart contracts.",
-      technologies: ["Next.js", "TypeScript", "TailwindCSS"],
+      technologies: ["Next.js", "Redux Toolkit", "@solana/web3.js", "TypeScript"],
       links: [
         {
           type: "Website",
@@ -210,7 +210,7 @@ export const DATA = {
       active: false,
       description:
         "A blogging platform like Medium, allowing users to create, read, update, and delete articles.",
-      technologies: ["React", "Redux", "TailwindCSS", "TinyMCE", "Appwrite"],
+      technologies: ["React", "Redux", "TinyMCE", "Appwrite"],
       links: [
         {
           type: "Website",
@@ -248,7 +248,7 @@ export const DATA = {
       active: false,
       description:
         "A multiplayer real-time chess platform similar to chess.com or lichess.org.",
-      technologies: ["React", "TailwindCSS", "WebSockets", "TypeScript", "Prisma"],
+      technologies: ["React", "WebSockets", "TypeScript", "Prisma"],
       links: [
         {
           type: "GitHub",
@@ -268,7 +268,6 @@ export const DATA = {
       technologies: [
         "React.js",
         "TypeScript",
-        "TailwindCSS",
         "Websocket",
         "Prisma",
       ],
@@ -288,7 +287,7 @@ export const DATA = {
       active: false,
       description:
         "A hackathon project that calculates annual carbon footprint and provides AI-powered suggestions to reduce it.",
-      technologies: ["Next.js", "TailwindCSS", "OpenAI API"],
+      technologies: ["Next.js", "OpenAI API", "Recharts"],
       links: [
         {
           type: "Website",
