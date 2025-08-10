@@ -8,7 +8,7 @@ export const DATA = {
   location: "West Bengal, India",
   // locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "engineer | cs noob | harmonicist",
+    "engineer | harmonicist",
   summary:
     "I like exploring computer science concepts, especially their theoretical aspects. I'm currently learning Web 3.0 stuff.",
   avatarUrl: "/me.jpg",
