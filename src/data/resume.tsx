@@ -205,6 +205,28 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Votana",
+      href: "https://votana.vercel.app/",
+      active: false,
+      description:
+        "A decentralized voting platform built on the solana blockchain.",
+      technologies: ["Next.js", "TypeScript", "Anchor", "Rust"],
+      links: [
+        {
+          type: "Website",
+          href: "https://votana.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/nileshpahari/votana",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/votana.png",
+      video: "",
+    },
+    {
       title: "React Blog",
       href: "https://basic-react-blogging-app.netlify.app/",
       active: false,
