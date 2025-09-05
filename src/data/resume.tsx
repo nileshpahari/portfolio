@@ -210,7 +210,7 @@ export const DATA = {
       active: false,
       description:
         "A decentralized voting platform built on the solana blockchain.",
-      technologies: ["Next.js", "TypeScript", "Anchor", "Rust"],
+      technologies: ["Next.js", "TypeScript", "Anchor", "Rust", "Redux Toolkit"],
       links: [
         {
           type: "Website",
@@ -246,23 +246,6 @@ export const DATA = {
         },
       ],
       image: "/reactblog.webp",
-      video: "",
-    },
-    {
-      title: "Twitter-Like program",
-      href: "https://github.com/nileshpahari/twitter-program",
-      active: true,
-      description:
-        "A Twitter-like program on the solana blockchain where users can create and delete tweets, react to them, and add comments.",
-      technologies: ["Anchor", "Rust", "TypeScript"],
-      links: [
-        {
-          type: "GitHub",
-          href: "https://github.com/nileshpahari/twitter-program",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/twitter.png",
       video: "",
     },
     {
