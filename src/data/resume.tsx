@@ -7,8 +7,7 @@ export const DATA = {
   url: "https://nileshkrpahari.xyz",
   location: "West Bengal, India",
   // locationLink: "https://www.google.com/maps/place/sanfrancisco",
-  description:
-    "engineer | harmonicist",
+  description: "engineer | harmonicist",
   summary:
     "I like exploring computer science concepts, especially their theoretical aspects. I'm currently learning Web 3.0 stuff.",
   avatarUrl: "/me.jpg",
@@ -35,7 +34,7 @@ export const DATA = {
 
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/resume.pdf", icon: Download, label: "Resume" }
+    { href: "/resume.pdf", icon: Download, label: "Resume" },
     // { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
@@ -127,7 +126,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/contestpulse.jpeg",
+      image: "/contestpulse.webp",
       video: "",
     },
     {
@@ -157,7 +156,62 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/clipzo.jpg",
+      image: "/clipzo.webp",
+      video: "",
+    },
+    {
+      title: "Votana",
+      href: "https://votana.vercel.app/",
+      active: false,
+      description:
+        "A decentralized voting platform built on the solana blockchain.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Anchor",
+        "Rust",
+        "Redux Toolkit",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://votana.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/nileshpahari/votana",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/votana.png",
+      video: "",
+    },
+    {
+      title: "Walliy",
+      href: "https://walliy.vercel.app/",
+      active: false,
+      description:
+        "A web-based crypto wallet where users can store private keys and interact with smart contracts.",
+      technologies: [
+        "Next.js",
+        "Redux Toolkit",
+        "@solana/web3.js",
+        "TypeScript",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://walliy.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/nileshpahari/walliy",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/wallet.png",
       video: "",
     },
     {
@@ -183,51 +237,23 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Walliy",
-      href: "https://walliy.vercel.app/",
+      title: "Media Sphere",
+      href: "",
       active: false,
-      description:
-        "A web-based crypto wallet where users can store private keys and interact with smart contracts.",
-      technologies: ["Next.js", "Redux Toolkit", "@solana/web3.js", "TypeScript"],
+      description: "Backend for a media sharing platform similar to YouTube.",
+      technologies: ["Node.js", "Express", "MongoDB", "TypeScript"],
       links: [
         {
-          type: "Website",
-          href: "https://walliy.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "GitHub",
-          href: "https://github.com/nileshpahari/walliy",
+          href: "https://github.com/nileshpahari/media-sphere/",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/wallet.png",
+      image: "/mediasphere.webp",
       video: "",
     },
     {
-      title: "Votana",
-      href: "https://votana.vercel.app/",
-      active: false,
-      description:
-        "A decentralized voting platform built on the solana blockchain.",
-      technologies: ["Next.js", "TypeScript", "Anchor", "Rust", "Redux Toolkit"],
-      links: [
-        {
-          type: "Website",
-          href: "https://votana.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "GitHub",
-          href: "https://github.com/nileshpahari/votana",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/votana.png",
-      video: "",
-    },
-    {
-      title: "React Blog",
+      title: "Basic React Blog",
       href: "https://basic-react-blogging-app.netlify.app/",
       active: false,
       description:
@@ -245,23 +271,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/reactblog.webp",
-      video: "",
-    },
-    {
-      title: "Media Sphere",
-      href: "",
-      active: false,
-      description: "Backend for a media sharing platform similar to YouTube.",
-      technologies: ["Node.js", "Express", "MongoDB", "TypeScript"],
-      links: [
-        {
-          type: "GitHub",
-          href: "https://github.com/nileshpahari/media-sphere/",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/mediasphere.jpeg",
+      image: "/blog.png",
       video: "",
     },
     {
@@ -279,50 +289,6 @@ export const DATA = {
         },
       ],
       image: "/topchess.jpeg",
-      video: "",
-    },
-    {
-      title: "Chatty",
-      href: "https://chatty.netlify.app/",
-      active: false,
-      description:
-        "A real-time chat app like WhatsApp supporting text and image messages using WebSockets.",
-      technologies: [
-        "React.js",
-        "TypeScript",
-        "Websocket",
-        "Prisma",
-      ],
-      links: [
-        {
-          type: "GitHub",
-          href: "https://github.com/nileshpahari/chatty",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/chatty.png",
-      video: "",
-    },
-    {
-      title: "Carbon Sense",
-      href: "https://innovocon2k25.vercel.app/",
-      active: false,
-      description:
-        "A hackathon project that calculates annual carbon footprint and provides AI-powered suggestions to reduce it.",
-      technologies: ["Next.js", "OpenAI API", "Recharts"],
-      links: [
-        {
-          type: "Website",
-          href: "https://innovocon2k25.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "GitHub",
-          href: "https://github.com/nileshpahari/innovocon2025",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/carbonsense.avif",
       video: "",
     },
   ],
