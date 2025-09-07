@@ -154,7 +154,7 @@ export default function Page() {
               delay={BLUR_FADE_DELAY * 12 + DATA.projects.length * 0.05 + 0.1}
             >
               <Button asChild>
-                <Link href="/projects">More Projects</Link>
+                <Link target="_blank" href="github.com/nileshpahari/projects">More Projects</Link>
               </Button>
             </BlurFade>
           </div>
