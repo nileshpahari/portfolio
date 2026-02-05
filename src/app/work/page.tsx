@@ -21,6 +21,7 @@ const ossContributions: OSSOrg[] = [
       { url: "https://github.com/django/django/pull/20426", status: "merged" },
       { url: "https://github.com/django/django/pull/20586", status: "merged" },
       { url: "https://github.com/django/django/pull/20447", status: "merged" },
+	  { url: "https://github.com/django/django/pull/20528", status: "merged" },
       { url: "https://github.com/django/django/pull/20415", status: "closed" },
       { url: "https://github.com/django/django/pull/20456", status: "open" },
       { url: "https://github.com/django/django/pull/20458", status: "open" },
