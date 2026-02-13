@@ -13,38 +13,65 @@ interface OSSOrg {
   contributions: Contribution[];
 }
 
-const ossContributions: OSSOrg[] = [
-  {
-    name: "Django",
-    contributions: [
-      { url: "https://github.com/django/django/pull/20421", status: "merged" },
-      { url: "https://github.com/django/django/pull/20426", status: "merged" },
-      { url: "https://github.com/django/django/pull/20586", status: "merged" },
-      { url: "https://github.com/django/django/pull/20447", status: "merged" },
-	  { url: "https://github.com/django/django/pull/20528", status: "merged" },
-	  { url: "https://github.com/django/django/pull/20458", status: "merged" },
-	  { url: "https://github.com/django/django/pull/20404", status: "merged" },
-      { url: "https://github.com/django/django/pull/20456", status: "open" },
-      { url: "https://github.com/django/django/pull/20396", status: "open" },
-	  { url: "https://github.com/django/django/pull/20415", status: "closed" },
-    ],
-  },
-  {
-    name: "OWASP Nest",
-    contributions: [
-      { url: "https://github.com/OWASP/Nest/pull/2789", status: "merged" },
-      { url: "https://github.com/OWASP/Nest/pull/2873", status: "merged" },
-      { url: "https://github.com/OWASP/Nest/pull/2824", status: "merged" },
-    ],
-  },
-  {
-    name: "OWASP BLT",
-    contributions: [
-      { url: "https://github.com/OWASP-BLT/BLT/pull/5126", status: "merged" },
-      { url: "https://github.com/OWASP-BLT/BLT/pull/4770", status: "merged" },
-    ],
-  },
+interface RepoConfig {
+  org: string;
+  repo: string;
+  displayName?: string;
+}
+
+const GITHUB_USERNAME = "nileshpahari";
+
+const repos: RepoConfig[] = [
+  { org: "django", repo: "django", displayName: "Django" },
+  { org: "OWASP", repo: "Nest", displayName: "OWASP Nest" },
+  { org: "OWASP-BLT", repo: "BLT", displayName: "OWASP BLT" },
 ];
+
+async function fetchPRsForRepo(org: string, repo: string): Promise<Contribution[]> {
+  try {
+    const response = await fetch(
+      `https://api.github.com/search/issues?q=type:pr+author:${GITHUB_USERNAME}+repo:${org}/${repo}&per_page=100`,
+      {
+        headers: {
+          Accept: "application/vnd.github.v3+json",
+          // Authorization: `token ${process.env.GITHUB_TOKEN}`,
+        },
+        next: { revalidate: 3600 },
+      }
+    );
+
+    if (!response.ok) {
+      console.error(`Failed to fetch PRs for ${org}/${repo}:`, response.statusText);
+      return [];
+    }
+
+    const data = await response.json();
+
+    return data.items
+      .map((pr: any) => ({
+        url: pr.html_url,
+        status: (pr.pull_request?.merged_at ? "merged" : pr.state) as "merged" | "open" | "closed",
+      }))
+      .filter((pr: Contribution) => pr.status !== "closed");
+  } catch (error) {
+    console.error(`Error fetching PRs for ${org}/${repo}:`, error);
+    return [];
+  }
+}
+
+async function fetchAllContributions(): Promise<OSSOrg[]> {
+  const contributions = await Promise.all(
+    repos.map(async (repoConfig) => {
+      const prs = await fetchPRsForRepo(repoConfig.org, repoConfig.repo);
+      return {
+        name: repoConfig.displayName || `${repoConfig.org}/${repoConfig.repo}`,
+        contributions: prs,
+      };
+    })
+  );
+
+  return contributions;
+}
 
 function getPRNumber(url: string): string {
   const match = url.match(/\/pull\/(\d+)/);
@@ -131,7 +158,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ProofOfWork() {
+export default async function ProofOfWork() {
+  const ossContributions = await fetchAllContributions();
+
   const totalMerged = ossContributions.reduce(
     (acc, org) => acc + org.contributions.filter((c) => c.status === "merged").length,
     0
