@@ -102,6 +102,39 @@ export const DATA = {
     },
   ],
   projects: [
+	{
+	  title: "Shell",
+	  href: "https://github.com/nileshpahari/shell",
+	  active: true,
+	  description:
+		"A simple Unix shell implemented in pure C that supports piping and I/O redirection.",
+	  technologies: ["C"],
+	  links: [
+		{
+		  type: "GitHub",
+		  href: "https://github.com/nileshpahari/shell",
+		  icon: <Icons.github className="size-3" />,
+		},
+	  ],
+	  image: "/shell.png",
+	  video: "",
+	},
+	{
+	title: "dict",
+	description: "A word dictionary implemented in C using HashMap, supporting both interactive and command-line modes.",
+	href: "https://github.com/nileshpahari/dict",
+	active: true,
+	technologies: ["C"],
+	links: [
+	  {
+		type: "GitHub",
+		href: "https://github.com/nileshpahari/dict",
+		icon: <Icons.github className="size-3" />,
+	  },
+	],
+	image: "/dict.png",
+	video: "",
+	},
     {
       title: "Contest Pulse",
       href: "https://contestpulse.netlify.app/",
@@ -253,28 +286,28 @@ export const DATA = {
       image: "/mediasphere.webp",
       video: "",
     },
-    {
-      title: "Basic React Blog",
-      href: "https://basic-react-blogging-app.netlify.app/",
-      active: false,
-      description:
-        "A blogging platform like Medium, allowing users to create, read, update, and delete articles.",
-      technologies: ["React", "Redux", "TinyMCE", "Appwrite"],
-      links: [
-        {
-          type: "Website",
-          href: "https://basic-react-blogging-app.netlify.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "GitHub",
-          href: "https://github.com/nileshpahari/react-blog",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/blog.png",
-      video: "",
-    },
+    // {
+    //   title: "Basic React Blog",
+    //   href: "https://basic-react-blogging-app.netlify.app/",
+    //   active: false,
+    //   description:
+    //     "A blogging platform like Medium, allowing users to create, read, update, and delete articles.",
+    //   technologies: ["React", "Redux", "TinyMCE", "Appwrite"],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://basic-react-blogging-app.netlify.app/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "GitHub",
+    //       href: "https://github.com/nileshpahari/react-blog",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/blog.png",
+    //   video: "",
+    // },
     {
       title: "Top Chess",
       href: "https://topchess.netlify.app/",
