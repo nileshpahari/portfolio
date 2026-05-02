@@ -7,29 +7,25 @@ export const DATA = {
   url: "https://nileshkrpahari.xyz",
   location: "West Bengal, India",
   // locationLink: "https://www.google.com/maps/place/sanfrancisco",
-  description: "engineer | harmonicist",
+  description: "engineer",
   summary:
-    "I like exploring computer science concepts, especially their theoretical aspects. I'm currently learning Web 3.0 stuff.",
+    "I like exploring computer science concepts, especially their theoretical aspects. I try to build things from scratch and have a strong interest in systems programming, backend development and web3. I am currently diving deep into Rust and C",
   avatarUrl: "/me.jpg",
   skills: [
     "TypeScript",
-    "JavaScript",
+	"Rust",
+	"C",
+	"Python",
+	"GNU/Linux",
     "React.js",
+	"Express.js",
     "Next.js",
-    "Express.js",
+	"MySQL",
+	"PostgreSQL",
     "MongoDB",
-    "PostgreSQL",
-    "MySQL",
+	"Redux",
     "WebSockets",
-    "Redux",
-    "GNU/Linux",
-    "C++",
-    "Python",
     "Git",
-    "Docker",
-    "Vercel",
-    "AWS",
-    "Rust",
   ],
 
   navbar: [
@@ -49,17 +45,17 @@ export const DATA = {
 
         navbar: true,
       },
-      LinkedIn: {
-        name: "LinkedIn",
-        url: "https://linkedin.com/in/nileshpahari",
-        icon: Icons.linkedin,
-
-        navbar: true,
-      },
       X: {
         name: "X",
         url: "https://x.com/nileshpahari",
         icon: Icons.x,
+
+        navbar: true,
+      },
+      LinkedIn: {
+        name: "LinkedIn",
+        url: "https://linkedin.com/in/nileshpahari",
+        icon: Icons.linkedin,
 
         navbar: true,
       },
@@ -119,22 +115,22 @@ export const DATA = {
 	  image: "/shell.png",
 	  video: "",
 	},
-	{
-	title: "dict",
-	description: "A word dictionary implemented in C using HashMap, supporting both interactive and command-line modes.",
-	href: "https://github.com/nileshpahari/dict",
-	active: true,
-	technologies: ["C"],
-	links: [
-	  {
-		type: "GitHub",
-		href: "https://github.com/nileshpahari/dict",
-		icon: <Icons.github className="size-3" />,
-	  },
-	],
-	image: "/dict.png",
-	video: "",
-	},
+	// {
+	// title: "dict",
+	// description: "A word dictionary implemented in C using HashMap, supporting both interactive and command-line modes.",
+	// href: "https://github.com/nileshpahari/dict",
+	// active: true,
+	// technologies: ["C"],
+	// links: [
+	//   {
+	// 	type: "GitHub",
+	// 	href: "https://github.com/nileshpahari/dict",
+	// 	icon: <Icons.github className="size-3" />,
+	//   },
+	// ],
+	// image: "/dict.png",
+	// video: "",
+	// },
     {
       title: "Contest Pulse",
       href: "https://contestpulse.netlify.app/",

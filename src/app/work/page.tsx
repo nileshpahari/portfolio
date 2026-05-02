@@ -173,6 +173,23 @@ export default async function ProofOfWork() {
         My open source contributions, projects, and other work.
       </p>
 
+		{/* Projects */}
+		<div className="mb-10">
+		<h2 className="font-medium text-lg mb-4">Projects</h2>
+		<p className="text-sm text-neutral-600 dark:text-neutral-400">
+		This{" "}
+		<Link
+		href="https://github.com/nileshpahari/projects"
+			target="_blank"
+		rel="noopener noreferrer"
+		className="underline underline-offset-4 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+		>
+		repo
+		</Link>{" "}
+		contains links to all my projects.
+			</p>
+		</div>
+
       {/* OSS Contributions */}
       <div className="mb-10">
         <h2 className="font-medium text-lg mb-1">OSS Contributions</h2>
@@ -186,22 +203,6 @@ export default async function ProofOfWork() {
         </div>
       </div>
 
-      {/* Projects */}
-      <div className="mb-10">
-        <h2 className="font-medium text-lg mb-4">Projects</h2>
-        <p className="text-sm text-neutral-600 dark:text-neutral-400">
-          This{" "}
-          <Link
-            href="https://github.com/nileshpahari/projects"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline underline-offset-4 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
-          >
-            repo
-          </Link>{" "}
-          contains links to all my major projects.
-        </p>
-      </div>
 
       {/* Competitive Programming */}
       <div className="mb-10">
